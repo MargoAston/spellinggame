@@ -19,6 +19,7 @@ displayDropdown();
 
 // Dynamically add a dropdown box with spelling pattern options
 function displayDropdown() {
+
     theOptions = aList.setOptions();
     console.log("this is the list of options:", theOptions);
 
@@ -43,12 +44,14 @@ function displayDropdown() {
 }
 
 
-
 // Event listener  for 'start game' button
 const startButton = document.getElementById("start");
 startButton.addEventListener("click", startGame);
 
 function startGame(event) {
+    if (gamePhase == 4) {
+        location.reload();
+    }
     gamePhase = 1;
     clearBoard();
     getList();
@@ -191,7 +194,9 @@ function clearBoard() {
 
 // Event listener  for 'check it' flip box
 const checkitButton = document.getElementById("checkit");
-checkitButton.addEventListener("mouseenter", updateScore); 
+checkitButton.addEventListener("focus", updateScore); 
+
+
 
 //This function is under construction, does not yet appear in the game
 function updateScore(event) {
@@ -227,12 +232,10 @@ function nextPhase() {
         const phaseHide = document.getElementById("phaseNum");
         phaseHide.style.display = 'none';
 
-        const gameover = document.getElementById("nextWord").value = "game over";
-         
+        document.getElementById("nextWord").value = "game over";
 
-        const phaseupdate = document.querySelector("#phaseNum");
-        phaseupdate.textContent = "Game Over";
-        
+        document.getElementById("start").value = "Play Again";
+         
     }
     
 }
