@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style_spelling.css">
+    <title>Spelling Page</title>
+    <script src="modules.js" type="module"></script>
+</head>
+
+<body>justify-items: center;
+
+    <!--This is the heading section-->
+    <header>
+        <a tabindex="-1" id="logo_link" href="index.html">
+            <img class="logo_classroom" alt="Classroom Logo" src="images/rsz_logo.png">
+        </a>
+        <nav>
+            <a tabindex="-1" href="mrs-astons-classroom.html">Home</a>
+            <a tabindex="-1" href="first-grade-page.html">1st Grade</a>
+            <a tabindex="-1" href="second-grade-page.html">2nd Grade</a>
+            <a tabindex="-1" href="third-grade-page.html">3rd Grade</a>
+        </nav>
+    </header>
+
+    <!---This is the hero box section-->
+    <div id="hero1-box">
+        <h1 id="home-title"></h1>
+        <h2>Step-by-Step Spelling Game</h2>
+        <p>
+            -Instructions-
+        </p>
+        <ul>
+            <li>Step 1: identify the target spelling pattern</li>
+            <li>Step 2: identify the onset and rime.</li>
+            <li>Step 3: spell the whole word</li>
+        </ul>
+    </div>
+    
+
+    <!-- This is the main section -->
+    <main>
+
+        <section id="patternsAvailable" class="center">
+            <p>Please practice these patterns during semester 1: </p>
+            <br>
+        </section>
+
+
+        <!-- Dynamically created pattern options -->
+        <section id="begin">
+            <div id="spellingPatternOptions" class="center"></div>
+
+            <!-- Start Game button -->
+            <br>
+            <div>
+                <input type="button" id="start" value="Start Game">
+                <br><br>
+            </div>
+            <div id="phaseNumHolder">
+                <p id="phaseNum">Step 1</p>
+            </div>
+        </section>
+
+
+        <!--Displays current word information -->
+        <section id="spellinglist">
+
+            <div class="container">
+                <!--Display picture clue-->
+                <div id="clue">
+                    <img id="icon-img" src="" alt="">
+                </div>
+                <!--Input box for the user's guess-->
+                <div id="guess">
+                    <input tabindex="0" type=text id="onset" name="onset" maxlength="6" size="6">
+
+                    <input tabindex="0" type=text id="targetPattern" name="targetPattern" maxlength="1" size="1">
+
+                    <input tabindex="0" type=text id="rime" name="rime" maxlength="3" size="3">
+                </div>
+                <!--Check it flip box-->
+                <div tabindex="0" id="checkit" class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h3 id="front" style="font-size:30px ;">check it</h3>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 id="wordCheck"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="continueGame">
+            <!-- 'Next Word' button -->
+            <br>
+            <div>
+                <input tabindex="0"  type="button" id="nextWord" class="center" value="Next Word">
+                <br><br>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
