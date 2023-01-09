@@ -9,10 +9,9 @@ body {
 
 /*header*/
 header {
-    display: grid;
-    grid-template-columns: 150px auto; 
-    background-color: #e67084;
+    height: 0px;
 }
+
 
 #logo_link {
     padding-top: 5px;
@@ -24,29 +23,11 @@ header {
     transform: scale(1.1);
 }
 
-/*navigation bar*/
-nav {
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-}
-
-nav a {
-    text-align: center;
-    color: black;
-    padding: 4ex;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #90bc44;
-    color: #e67084;
-}
 
 /*hero box*/
 #hero1-box {
     width:100%;
-    height: 325px;
+    height: 320px;
     background-color: #5980ce;
     background-image: radial-gradient(#90bc44 10%, transparent 11%);
     background-size: 30px 30px;
@@ -173,11 +154,6 @@ input {
    
 }
 
-/*#part2 {
-    display: flex;
-    align-items: bottom;
-    grid-column: 3;
-}*/
 
 #checkit {
     grid-column: 4;
@@ -198,11 +174,12 @@ input {
     background-color: #90bc44;
     width: 5em;
     height: 3em;
-    margin-left: 75%;
-    rotate: 30deg;
-    border-radius: 10%;
+    margin-left: 57%;
+    rotate: 15deg;
+    border-radius: 50%;
     border: 3px solid #e67084;
     text-align: center;
+    margin-top: -90px;
     
 }
 
