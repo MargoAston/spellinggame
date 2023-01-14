@@ -6,7 +6,7 @@ const aList = {
     lists: [
       {
         spellingPattern: "a",
-        word1: ["ant", "", "nt", "images/rsz_ant.png"],
+        word1: ["bat", "b", "t", "images/bat.png"],
         word2: ["flag", "fl", "g", "images/rsz_flag.png"],
         word3: ["mad", "m", "d", "images/rsz_mad.png"],
         word4: ["sam", "s", "m", "images/rsz_sam.png"],
